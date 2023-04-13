@@ -1,0 +1,84 @@
+#LimitAlarmDefinitions;
+"LocationPath","Name","UpdateRate","ReturnToNormalEnable","ReturnToNormalMessageBody","DeadBand","LoLoEnable","LoLoValue","LoLoMessageBody","LoLoSeverity","LoLoAckRequired","LoEnable","LoValue","LoMessageBody","LoSeverity","LoAckRequired","HiEnable","HiValue","HiMessageBody","HiSeverity","HiAckRequired","HiHiEnable","HiHiValue","HiHiMessageBody","HiHiSeverity","HiHiAckRequired"
+
+#DigitalAlarmDefinitions;
+"LocationPath","Name","UpdateRate","ReturnToNormalEnable","ReturnToNormalMessageBody","Enable","AlarmValue","MessageBody","Severity","AckRequired"
+
+#SimulationSignals;
+"LocationPath","Name","Type","Amplitude","NumSteps","Period","Phase","Position","Ratio"
+"\\Simulation Definitions","ReadCount","Read Count","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","WriteCount","Write Count","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","Random","Random","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","Ramp(T)","Ramp","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","Sine(T)","Sine","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","Square(T)","Square","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","Triangle(T)","Triangle","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","Step(T)","Step","1",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Ramp(T)","Ramp","100",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Random","Random","100",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Sine(T)","Sine","100",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Square(T)","Square","100",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Step(T)","Step","100",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Triangle(T)","Triangle","100",3,"1000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Sine(T/10)","Sine","100",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","Square(T/10)","Square","1",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Sine(T/100)","Sine","100",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Ramp(T/10)","Ramp","100",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Ramp(T/100)","Ramp","100",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Square(T/10)","Square","100",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Square(T/100)","Square","100",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Step(T/10)","Step","100",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Step(T/100)","Step","100",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Triangle(T/10)","Triangle","100",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","100*Triangle(T/100)","Triangle","100",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","Ramp(T/10)","Ramp","1",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","Ramp(T/100)","Ramp","1",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","Sine(T/10)","Sine","1",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","Sine(T/100)","Sine","1",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","Square(T/100)","Square","1",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","Step(T/10)","Step","1",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","Step(T/100)","Step","1",3,"100000","0","0","0,333333333333333"
+"\\Simulation Definitions","Triangle(T/10)","Triangle","1",3,"10000","0","0","0,333333333333333"
+"\\Simulation Definitions","Triangle(T/100)","Triangle","1",3,"100000","0","0","0,333333333333333"
+
+#Conversions;
+"LocationPath","Name","Type","LowEU","HighEU","LowIR","HighIR","Clamping","LowClamp","HighClamp"
+
+#MX_PollRateDefinitionsRoot;
+"LocationPath","Name"
+"\\","Poll Method Definitions"
+
+#MX_PollRateDefinitions;
+"LocationPath","Name","PrimaryRate","Phase","EnablePrimaryRate","Default"
+"\\Poll Method Definitions","1000ms",1000,0,"Yes","Yes"
+"\\Poll Method Definitions","2000ms",2000,0,"Yes","No"
+"\\Poll Method Definitions","3000ms",3000,0,"Yes","No"
+"\\Poll Method Definitions","4000ms",4000,0,"Yes","No"
+"\\Poll Method Definitions","5000ms",5000,0,"Yes","No"
+
+#MX_Channel_Devices;
+"LocationPath","Name","Description","Enable","PRM_Retries","PRM_DelayTime","PRM_Mode","PRM_PhoneNumber","PRM_NetworkNumber","PRM_StationNumber","PRM_UnitNumber","PRM_ConnectUnitNumber","PRM_IONumber","PRM_CpuType","PRM_UnitType","PRM_PacketType","PRM_ProtocolType","PRM_PortNumber","PRM_BaudRate","PRM_DataBits","PRM_Parity","PRM_StopBits","PRM_Control","PRM_SumCheck","PRM_HostAddress","PRM_CpuTimeOut","PRM_TimeOut","PRM_SourceNetworkNumber","PRM_SourceStationNumber","PRM_DestinationPortNumber","PRM_DestinationIONumber","PRM_MultiDropChannelNumber","PRM_ThroughNetworkType","PRM_IntelligentPreferenceBit","PRM_DidPropertyBit","PRM_DsidPropertyBit","PRM_BufferSize","PRM_ConnectChannelNumber","PRM_DeviceSet","PRM_StructSize","PRM_ConnectWay","PRM_AtCommand","PRM_DialNumber","PRM_OutsideLineNumber","PRM_CallbackNumber","PRM_LineType","PRM_ConnectionCDWaitTime","PRM_ConnectionModemReportWaitTime","PRM_DisconnectionCDWaitTime","PRM_DisconnectionDelayTime","PRM_TransmissionDelayTime","PRM_ATCommandResponseWaitTime","PRM_PasswordCancelResponseWaitTime","PRM_ATCommandPasswordCancelRetryTimes","PRM_CallbackCancelWaitTime","PRM_CallbackDelayTime","PRM_CallbackReceptionWaitingTimeOut","PRM_PcIf","PRM_PlcIf","PRM_PcPlcIf","PRM_Via","PRM_UnitName","PRM_Comment","PRM_CpuSType","PRM_ConnectCpuSType","PRM_Name","PRM_Title","PRM_Password","PRM_ConnectType","PRM_RemotePasswdFlg","PRM_ReplyTimeout","BAK_Enable","BAK_Retries","BAK_DelayTime","BAK_Mode","BAK_PhoneNumber","BAK_NetworkNumber","BAK_StationNumber","BAK_UnitNumber","BAK_ConnectUnitNumber","BAK_IONumber","BAK_CpuType","BAK_UnitType","BAK_PacketType","BAK_ProtocolType","BAK_PortNumber","BAK_BaudRate","BAK_DataBits","BAK_Parity","BAK_StopBits","BAK_Control","BAK_SumCheck","BAK_HostAddress","BAK_CpuTimeOut","BAK_TimeOut","BAK_SourceNetworkNumber","BAK_SourceStationNumber","BAK_DestinationPortNumber","BAK_DestinationIONumber","BAK_MultiDropChannelNumber","BAK_ThroughNetworkType","BAK_IntelligentPreferenceBit","BAK_DidPropertyBit","BAK_DsidPropertyBit","BAK_BufferSize","BAK_ConnectChannelNumber","BAK_DeviceSet","BAK_StructSize","BAK_ConnectWay","BAK_AtCommand","BAK_DialNumber","BAK_OutsideLineNumber","BAK_CallbackNumber","BAK_LineType","BAK_ConnectionCDWaitTime","BAK_ConnectionModemReportWaitTime","BAK_DisconnectionCDWaitTime","BAK_DisconnectionDelayTime","BAK_TransmissionDelayTime","BAK_ATCommandResponseWaitTime","BAK_PasswordCancelResponseWaitTime","BAK_ATCommandPasswordCancelRetryTimes","BAK_CallbackCancelWaitTime","BAK_CallbackDelayTime","BAK_CallbackReceptionWaitingTimeOut","BAK_PcIf","BAK_PlcIf","BAK_PcPlcIf","BAK_Via","BAK_UnitName","BAK_Comment","BAK_CpuSType","BAK_ConnectCpuSType","BAK_Name","BAK_Title","BAK_Password","BAK_ConnectType","BAK_RemotePasswdFlg","BAK_ReplyTimeout","Simulate","DeviceType","PRM_FastEthernet","PRM_MaxMergeBits","PRM_MaxMergeWords","PRM_OutxCtsFlow","PRM_ReadCoilStatus_MaxCoils","PRM_ReadInputStatus_MaxInputs","PRM_ReadHoldingRegisters_MaxRegisters","PRM_ReadInputRegisters_MaxRegisters","PRM_ForceMultipleCoils_MaxCoils","PRM_LoadMultipleRegisters_MaxRegisters","PRM_MBPollRate","BAK_FastEthernet","BAK_MaxMergeBits","BAK_MaxMergeWords","BAK_OutxCtsFlow","BAK_ReadCoilStatus_MaxCoils","BAK_ReadInputStatus_MaxInputs","BAK_ReadHoldingRegisters_MaxRegisters","BAK_ReadInputRegisters_MaxRegisters","BAK_ForceMultipleCoils_MaxCoils","BAK_LoadMultipleRegisters_MaxRegisters","BAK_MBPollRate","RWPriority","MinReadRate","ReadAggregation","WriteAggregation","MaxRequests","MaxTransactions","CheckPLCRanges","PRM_SetupName","BAK_SetupName","PRM_MaxRWWords","BAK_MaxRWWords","PRM_AsyncEthernet","BAK_AsyncEthernet","MXChange_ID","DNP3_Settings"
+"\\Address Space","GXSim1","","Yes",3,0,0,"",0,255,0,0,1023,4097,49,1,5,0,0,0,0,0,0,0,"127.0.0.1",0,1000,0,0,5511,0,0,0,0,0,0,0,0,0,128,0,"","","","",0,0,0,0,0,0,0,0,0,0,0,0,"GX Simulator3",0,0,1,4097,"",69633,69633,"","","",524292,0,1000,"No",3,0,0,"",1,1,0,0,0,0,0,0,0,0,9600,7,0,1,0,0,"0.0.0.0",10000,10000,1,1,0,0,0,0,0,0,0,0,0,0,128,0,"","","","",1,90,5,5,3,0,1,5,3,90,20,120,"<none>",0,0,0,0,"",0,0,"","","",0,0,1000,"No",0,0,160,64,0,124,124,124,124,0,0,1000,1,160,64,0,124,124,124,124,0,0,1000,1,0,"No","No",1000,1000,"Yes","Dev01","",16,16,0,0,0,""
+
+#MX_Folders;
+"LocationPath","Name","Description","Enable","Simulate","MXChange_DUTtype","MXChange_DUThash","MXChange_DUTdim1","MXChange_DUTdim2","MXChange_DUTdim3","MXChange_DUTidx1","MXChange_DUTidx2","MXChange_DUTidx3","MXChange_SpecID","MXChange_ID","MXChange_Name"
+
+#MX_DataTags;
+"LocationPath","Name","Description","Enable","AddressAsString","AccessRights","Simulate","SimulationSignal","GenerateAlarms","MessagePrefix","DigitalAlarmDefinition","LimitAlarmDefinition","DataTypeAsString","SwapWBOrder","ConvertToWord","Monitor","PollRateDefinition","UseConversion","Conversion","MXChange_ID","MXChange_Name","ManualValue","ManualValueAsString","BitOffset","Deadband","LocationType","BitField","BitNumber","BitCount","BitAccess","PXTagNo","PXOffset"
+
+#MX_DataTagsRoot;
+"LocationPath","Name","Description","Enable","AddressAsString","AccessRights","Simulate","SimulationSignal","GenerateAlarms","MessagePrefix","DigitalAlarmDefinition","LimitAlarmDefinition","DataTypeAsString","SwapWBOrder","ConvertToWord","Monitor","PollRateDefinition","UseConversion","Conversion","MXChange_ID","MXChange_Name","ManualValue","ManualValueAsString","BitOffset","Deadband","LocationType","BitField","BitNumber","BitCount","BitAccess","PXTagNo","PXOffset"
+"\\Address Space\GXSim1","MainConveyor","","Yes","Y0","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","BlueConveyor","","Yes","Y1","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","BridgeConveyor","","Yes","Y2","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","GreenConveyor","","Yes","Y3","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","LastConveyor","","Yes","Y4","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","BlueSensor","","Yes","X1","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","GreenSensor","","Yes","X2","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","StartButton","","Yes","X0","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","WarningLight","","Yes","Y5","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","StopButton","","Yes","X3","Read, Write","No","","No","","","","BOOL","No","No","Yes","1000ms","No","",,"","No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","Bilgi1","","Yes","D2","Read, Write","No","","No","","","","STRING (10)","No","No","Yes","1000ms","No","",,"","No","",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","Sistem","","Yes","X4","Read, Write","No","","No",,"","","BOOL","No","No","Yes","1000ms","No","",,,"No","False",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","Alarm1","","Yes","D0","Read, Write","No","","No","","","","STRING (10)","No","No","Yes","1000ms","No","",,,"No","",0,"0",4,"No",0,1,"No",1,0
+"\\Address Space\GXSim1","Alarm2","","Yes","D1","Read, Write","No","","No","","","","STRING (10)","No","No","Yes","1000ms","No","",,,"No","",0,"0",4,"No",0,1,"No",1,0
